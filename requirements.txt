@@ -1,0 +1,39 @@
+# Requirements for Intelli Summarize backend
+# Install with: python -m pip install -r requirements.txt
+# Note: `torch` often requires a platform-specific wheel; see https://pytorch.org/ for the recommended install
+
+# fastapi: ASGI web framework used to build API endpoints and route requests
+fastapi
+
+# uvicorn[standard]: ASGI server to run the FastAPI app (with recommended extras)
+uvicorn[standard]
+
+# sqlalchemy: ORM for defining models and interacting with the database
+sqlalchemy
+
+# pymysql: MySQL driver for SQLAlchemy to connect to MySQL/MariaDB databases
+pymysql
+
+# python-dotenv: Load environment variables from a .env file for configuration
+python-dotenv
+
+# transformers: HuggingFace library for loading summarization models and pipelines
+transformers
+
+# torch: PyTorch backend required by many HuggingFace models (CPU/GPU support)
+torch
+
+# pydantic: Data validation and settings parsing used by FastAPI for request/response models
+pydantic
+
+# PyMuPDF: Fast PDF parser (module name `fitz`) used as a PDF extraction fallback
+PyMuPDF
+
+# pdfplumber: PDF text extraction utility (preferred for robust text extraction)
+pdfplumber
+
+# python-docx: Parse .docx files to extract text from Word documents
+python-docx
+
+# pytest: Test runner for unit and integration tests
+pytest
